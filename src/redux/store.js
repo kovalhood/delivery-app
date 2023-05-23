@@ -2,7 +2,7 @@ import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import logger from "redux-logger";
 import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import searchesReducer from './searches/searches-reducer';
+import productsReducer from './products/products-reducer';
 
 const middleware = [
     ...getDefaultMiddleware({
@@ -23,7 +23,7 @@ const itemsPersistConfig = {
 // Configuring store
 const store = configureStore({
     reducer: {
-        searches: persistReducer(itemsPersistConfig, searchesReducer),
+        products: persistReducer(itemsPersistConfig, productsReducer),
     },
     middleware,
     // devTools: process.env.NODE_ENV ==='development',

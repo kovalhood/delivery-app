@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "McDonald's",
+    "rating": 5,
+    "estimatedTime": "20-30",
+    "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg",
+    "menu": [{
+        "id": 1001,
+        "name": "Burger",
+        "price": 30,
+        "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        },
+        {
+            "id": 1002,
+            "name": "Fries",
+            "price": 20,
+            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        },
+        {
+            "id": 1003,
+            "name": "Cola",
+            "price": 10,
+            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        }
+    ]},
+    {
+    "id": 2,
+    "name": "KFC",
+    "rating": 4.8,
+    "estimatedTime": "25-35",
+    "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg",
+    "menu": [{
+        "id": 2001,
+        "name": "Chicken",
+        "price": 30,
+        "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        },
+        {
+            "id": 2002,
+            "name": "Fries",
+            "price": 20,
+            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        },
+        {
+            "id": 2003,
+            "name": "Pepsi",
+            "price": 10,
+            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        }
+    ]}
+]

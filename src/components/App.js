@@ -5,6 +5,7 @@ import Header from "./Header";
 import Wrapper from "./Wrapper";
 import ShopsPage from '../pages/ShopsPage';
 import CartPage from "../pages/CartPage";
+import ShopMenu from './ShopMenu/ShopMenu';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Routes>
         <Route element={<Wrapper/>}>
           <Route path="/" element={<ShopsPage />} />
-          <Route path="/cart" element={<CartPage />}/>
+          <Route path='/:shopId' element={<ShopMenu />}></Route>
+          <Route path="/cart" element={<CartPage />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/" />} />
