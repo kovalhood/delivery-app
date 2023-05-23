@@ -1,0 +1,125 @@
+@import "../../../globalStyles/vars";
+
+.history_wrapper{
+    width: 100%;
+    min-height: 107px;
+    max-height: 300px;
+    padding-bottom: 10px;
+    border: 2px;
+    box-shadow: $mainShadow;
+    transition: $mainTransition;
+
+    @media screen and (min-width: 480px) {
+        width: 400px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 300px;
+        max-height: 320px;
+        margin-top: 0;
+    }
+}
+
+.history_header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: $greyColorSecondary;
+}
+
+.history_title{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: $mainLetterSpacing;
+}
+
+.clear_all{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    color: $greyColor;
+    cursor: pointer;
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $accentColor;
+    }
+}
+
+.history{
+    max-height: 190px;
+    overflow: scroll;
+    padding: 7px 0 0 0;
+    margin: 0 0 0 20px;
+    list-style: none;
+
+    @media screen and (min-width: 768px) {
+        max-height: 245px;
+    }
+}
+
+.history__item{
+    position: relative;
+    padding: 10px 0;
+}
+
+.history__event{
+    width: fit-content;
+    cursor: pointer;
+
+    // prevent sticky hover effects for buttons on touch devices
+    @media (hover: hover) {
+        &:hover .history__link {
+            color: $accentColor;
+        }
+    }
+}
+
+.history__time{
+    font-size: 9px;
+    color: $greyColor;
+    margin-bottom: 5px;
+}
+
+.history__link{
+    display: block;
+    width: fit-content;
+    font-weight: 500;
+    color: $greyColor;
+    transition: $mainTransition;
+}
+
+.delete_button{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    top: 50%;
+    right: 11px;
+    background: none;
+    border: none;
+    color: $greyColor;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $accentColor;
+    }
+}
+
+.clear_all__icon,
+.delete_button__icon{
+    fill: currentColor;
+}
