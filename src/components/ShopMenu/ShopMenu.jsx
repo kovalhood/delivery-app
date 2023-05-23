@@ -55,7 +55,7 @@ export default function ShopMenu() {
         }
     }
 
-    function addToCart(itemId, itemPrice) {
+    function addToCart(itemId, itemName, itemPrice, itemImage) {
         if (products.find(item => item.shopId !== Number(shopId))) {
             console.log('You have items from another restaurant in a cart');
             return;
@@ -63,16 +63,12 @@ export default function ShopMenu() {
 
         const selectedRestaurant = restaurants.find(item => item.id === Number(shopId));
         let itemsQuantity = 1;
-        dispatch(actions.addProduct(selectedRestaurant.id, itemId, itemPrice, itemsQuantity));
+        dispatch(actions.addProduct(selectedRestaurant.id, selectedRestaurant.name, itemName, itemId, itemPrice, itemsQuantity, itemImage));
         console.log(products);
     }
 
     function deleteItemFromCart(itemId) {
         dispatch(actions.deleteProductById(itemId));
-    }
-
-    function clearCart() {
-        dispatch(actions.deleteAll());
     }
 
     return <Section>
@@ -82,27 +78,25 @@ export default function ShopMenu() {
             <div className={s.details}>
                 <div className={s.image_wrapper}>
                     
-                    <button onClick={goBackHandle} className={s.go_back}>
-                        <svg className={s.go_back__icon} width="16" height="16" aria-label="logo">
-                            <use href={`${sprite}#arrow-back`}></use>
-                            </svg>
-                            Go back
-                        </button>
-                        
-                        <button onClick={()=>clearCart()}>Delete all</button>
+                <button onClick={goBackHandle} className={s.go_back}>
+                    {/* <svg className={s.go_back__icon} width="16" height="16" aria-label="logo">
+                        <use href={`${sprite}#arrow-back`}></use>
+                    </svg> */}
+                        Go back
+                    </button>
                 </div>
 
                 <ul className={s.menu}>
                 {shopMenu.map(({ id, name, price, image }) => (
                     <li key={id} className={s.menu__item}>
-                        <img src={image} alt={name} width={300}/>
+                        <img src={image} alt={name} className={ s.menu__image } />
                         <h3>{ name }</h3>
                         <p>{price} UAH</p>
 
                         
                         {products.find(item => item.productId === id) 
                             ? <button onClick={(()=> deleteItemFromCart(id))}>Delete from cart</button>
-                            : <button onClick={()=>addToCart(id, price)}>Add to cart</button>
+                            : <button onClick={()=>addToCart(id, name, price, image)}>Add to cart</button>
                         }
                         
                         

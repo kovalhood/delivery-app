@@ -4,24 +4,24 @@
     "name": "McDonald's",
     "rating": 5,
     "estimatedTime": "20-30",
-    "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg",
+    "image": "https://maximum.fm/uploads/media_news/2022/09/63286a4b8a97f238287496.png?w=1200&h=675&il&q=90&output=jpg",
     "menu": [{
         "id": 1001,
-        "name": "Burger",
-        "price": 30,
-        "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        "name": "Big Mac",
+        "price": 50,
+        "image": "https://cdn.winsightmedia.com/platform/files/public/2018-07/background/mcdonalds-Big-Mac_1532719623.jpg"
         },
         {
             "id": 1002,
             "name": "Fries",
-            "price": 20,
-            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+            "price": 30,
+            "image": "https://i.pinimg.com/originals/de/d5/81/ded581c487492841750f6d6ec7c92d55.png"
         },
         {
             "id": 1003,
-            "name": "Cola",
-            "price": 10,
-            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+            "name": "Coca-Cola",
+            "price": 20,
+            "image": "https://www.nicepng.com/png/detail/221-2214194_soft-drinks-mcdonalds-coke.png"
         }
     ]},
     {
@@ -29,24 +29,24 @@
     "name": "KFC",
     "rating": 4.8,
     "estimatedTime": "25-35",
-    "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg",
+    "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
     "menu": [{
         "id": 2001,
-        "name": "Chicken",
-        "price": 30,
-        "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+        "name": "Chicken Bucket",
+        "price": 60,
+        "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/12/16-piece-bucket-kfc.jpg?quality=82&strip=all"
         },
         {
             "id": 2002,
             "name": "Fries",
             "price": 20,
-            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+            "image": "https://brand-uk.assets.kfc.co.uk/2022-11/MOBORDER_LARGE_FRIES_1200x800.jpg?VersionId=vbgU.clRqk5aNYlTKaA.cfXTH1UXQ8yq"
         },
         {
             "id": 2003,
-            "name": "Pepsi",
-            "price": 10,
-            "image": "https://assets.bonappetit.com/photos/62cc4eca787a907e535e8e7f/1:1/w_2580%2Cc_limit/0711-black-bean-burger-lede.jpg"
+            "name": "Coffee",
+            "price": 25,
+            "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
         }
     ]}
 ]
