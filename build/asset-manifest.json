@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/delivery-app/static/css/main.fe7c2015.css",
+    "main.js": "/delivery-app/static/js/main.c24de499.js",
+    "static/media/icons.svg": "/delivery-app/static/media/icons.027c98a2dcac74110939212852c89fab.svg",
+    "index.html": "/delivery-app/index.html",
+    "main.fe7c2015.css.map": "/delivery-app/static/css/main.fe7c2015.css.map",
+    "main.c24de499.js.map": "/delivery-app/static/js/main.c24de499.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe7c2015.css",
+    "static/js/main.c24de499.js"
+  ]
+}
