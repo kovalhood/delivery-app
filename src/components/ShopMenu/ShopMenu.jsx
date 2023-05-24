@@ -88,7 +88,7 @@ export default function ShopMenu() {
                 
                     <div className={s.menu__controls}>
                         <button onClick={goBackHandle} className={s.go_back}>
-                            <HiArrowLeft/>
+                            <HiArrowLeft className={s.menu__icons}/>
                         </button>
                         <p className={s.menu__shop_name}>{ shopName }</p>
                     </div>
@@ -107,8 +107,8 @@ export default function ShopMenu() {
                             </div>
 
                             {products.find(item => item.productId === id) 
-                                ? <button className={s.menu__button_remove} onClick={(()=> deleteItemFromCart(id, name))}><HiTrash/></button>
-                                : <button className={s.menu__button_add} onClick={()=>addToCart(id, name, price, image)}><HiPlus/></button>
+                                ? <button className={s.menu__button_remove} onClick={(() => deleteItemFromCart(id, name))}><HiTrash className={s.menu__icons} /></button>
+                                : <button className={s.menu__button_add} onClick={()=>addToCart(id, name, price, image)}><HiPlus className={s.menu__icons}/></button>
                             }
                         </div>
                     </li>
