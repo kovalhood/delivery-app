@@ -7,22 +7,40 @@
     "estimatedTime": "20-30",
     "image": "https://maximum.fm/uploads/media_news/2022/09/63286a4b8a97f238287496.png?w=1200&h=675&il&q=90&output=jpg",
     "menu": [{
-        "id": 1001,
-        "name": "Big Mac",
-        "price": 50,
-        "image": "https://cdn.winsightmedia.com/platform/files/public/2018-07/background/mcdonalds-Big-Mac_1532719623.jpg"
+            "id": 1001,
+            "name": "Big Mac",
+            "price": 60,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_0005_BigMac_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
             "id": 1002,
-            "name": "Fries",
-            "price": 30,
-            "image": "https://i.pinimg.com/originals/de/d5/81/ded581c487492841750f6d6ec7c92d55.png"
+            "name": "Big Tasty",
+            "price": 80,
+            "image": "https://www.mcdonalds.com.mt/wp-content/uploads/2018/05/BigTasty-Classic.jpg"
         },
         {
             "id": 1003,
+            "name": "Fries",
+            "price": 40,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_6053_LargeFries_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
+        },
+        {
+            "id": 1004,
+            "name": "Chicken Nuggets",
+            "price": 50,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Chicken-McNuggets-6-pieces-new:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
+        },
+        {
+            "id": 1005,
             "name": "Coca-Cola",
-            "price": 20,
-            "image": "https://www.nicepng.com/png/detail/221-2214194_soft-drinks-mcdonalds-coke.png"
+            "price": 25,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Coca-Cola-Medium-2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
+        },
+        {
+            "id": 1006,
+            "name": "Coffee Late",
+            "price": 30,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-White-Coffee-Reg-v2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
         }
     ]},
     {
@@ -33,74 +51,122 @@
     "estimatedTime": "25-35",
     "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
     "menu": [{
-        "id": 2001,
-        "name": "Chicken Bucket",
-        "price": 60,
-        "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/12/16-piece-bucket-kfc.jpg?quality=82&strip=all"
+            "id": 2001,
+            "name": "Chicken Bucket",
+            "price": 100,
+            "image": "https://files.kfcku.com/uploads/media/food-menu/spesial/kfc-web_9pcbucket-_l.png"
         },
         {
             "id": 2002,
-            "name": "Fries",
-            "price": 20,
-            "image": "https://brand-uk.assets.kfc.co.uk/2022-11/MOBORDER_LARGE_FRIES_1200x800.jpg?VersionId=vbgU.clRqk5aNYlTKaA.cfXTH1UXQ8yq"
+            "name": "Colonel Burger",
+            "price": 70,
+            "image": "https://files.kfcku.com/uploads/media/food-menu/praktis/large/colonel-burger_900x500.png"
         },
         {
             "id": 2003,
+            "name": "Twister",
+            "price": 60,
+            "image": "https://kfcnamibia.com/wp-content/uploads/2021/10/Twister-1024x1024.jpg"
+        },
+        {
+            "id": 2004,
+            "name": "Fries",
+            "price": 50,
+            "image": "https://files.kfcku.com/uploads/media/dummy/food/kfc-web_frenchfriesreg_l.png"
+        },
+        {
+            "id": 2005,
             "name": "Coffee",
-            "price": 25,
+            "price": 35,
             "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
         }
     ]},
     {
     "id": 3,
     "name": "SushiMaster",
-    "rating": 4.6,
+    "rating": 4.5,
     "type": "Asian",
     "estimatedTime": "45-60",
-    "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
+    "image": "https://tomato.ua/image/resize/storage/restaurants/5bec4766ddb8b1004d268d19/15422114305bec476672e1f_5bec4731879ee7.99237775.jpeg?w=1200&h=1200",
     "menu": [{
-        "id": 3001,
-        "name": "Chicken Bucket",
-        "price": 60,
-        "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/12/16-piece-bucket-kfc.jpg?quality=82&strip=all"
+            "id": 3001,
+            "name": "Perfect Eve Set",
+            "price": 600,
+            "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%A1%D0%B5%D1%82%D0%B8/D1BB7461-E352-11ED-89FD-2FAABF3F94CA-1969%D1%851100_0005_New_%D0%A1%D0%B5%D1%82-%D0%A1%D0%B0%D0%BC%D0%B5-%D0%A2%D0%B5.png?alt=media&token=1f82c8e3-2aad-4c91-91c9-50ef7c0259ff&w=800&format=webp&mode=fit&q=60"
         },
         {
             "id": 3002,
-            "name": "Fries",
-            "price": 20,
-            "image": "https://brand-uk.assets.kfc.co.uk/2022-11/MOBORDER_LARGE_FRIES_1200x800.jpg?VersionId=vbgU.clRqk5aNYlTKaA.cfXTH1UXQ8yq"
+            "name": "Asian Sunrise Set",
+            "price": 700,
+            "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%A1%D0%B5%D1%82%D0%B8/83086F11-310C-11ED-B49D-176D6E48CD1B-1969%D1%851100_0009_%D0%A1%D0%B5%D1%82-%D0%A4_%D1%8E%D0%B6%D0%BD.png?alt=media&token=d34a40c2-8975-43bf-9bbf-2789aa9e2f77&w=800&format=webp&mode=fit&q=60"
         },
         {
             "id": 3003,
-            "name": "Coffee",
-            "price": 25,
-            "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
+            "name": "Party Master Set",
+            "price": 1000,
+            "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%A1%D0%B5%D1%82%D0%B8/70F63BE1-E516-11ED-8B33-0D607C07EC1C-1969%D1%851100_0003_%D0%A1%D0%B5%D1%82-%D0%86%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9.png?alt=media&token=94dae7e2-1174-413e-aecf-17f195ab46e3&w=800&format=webp&mode=fit&q=60"
+        },
+        {
+            "id": 3004,
+            "name": "Starter Set",
+            "price": 400,
+            "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%A1%D0%B5%D1%82%D0%B8/152D5921-9C9F-11ED-8B10-F7FE9622126C-1969%D1%851100_0004_%D0%A1%D0%B5%D1%82-%D0%93%D1%83%D1%80%D0%BC%D0%B0%D0%BD.png?alt=media&token=c6e8840f-e58e-414b-a441-20d17a349ac9&w=800&format=webp&mode=fit&q=60"
         }
     ]},
     {
     "id": 4,
     "name": "Dominos Pizza",
-    "rating": 4.3,
+    "rating": 4.6,
     "type": "Italian",
     "estimatedTime": "30-40",
-    "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
+    "image": "https://e3.365dm.com/22/08/2048x1152/skynews-dominos-pizza-food_5860170.jpg",
     "menu": [{
-        "id": 4001,
-        "name": "Chicken Bucket",
-        "price": 60,
-        "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/12/16-piece-bucket-kfc.jpg?quality=82&strip=all"
+            "id": 4001,
+            "name": "Pizza Tony Pepperoni",
+            "price": 300,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Ftony-pepperony-min.webp&w=1200&q=75"
         },
         {
             "id": 4002,
-            "name": "Fries",
-            "price": 20,
-            "image": "https://brand-uk.assets.kfc.co.uk/2022-11/MOBORDER_LARGE_FRIES_1200x800.jpg?VersionId=vbgU.clRqk5aNYlTKaA.cfXTH1UXQ8yq"
+            "name": "Pizza Chorizo",
+            "price": 280,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2Fchorizo-pizza-plate.webp&w=1200&q=75"
         },
         {
             "id": 4003,
-            "name": "Coffee",
-            "price": 25,
-            "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
+            "name": "Pizza BBQ",
+            "price": 320,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fbarbekiu1.webp&w=1200&q=75"
+        },
+        {
+            "id": 4004,
+            "name": "Pizza Carbonara",
+            "price": 320,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fkarbonara.webp&w=1200&q=75"
+        },
+        {
+            "id": 4005,
+            "name": "Pizza with veal",
+            "price": 340,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2Fbeef-pizza-plate.webp&w=1200&q=75"
+        },
+        {
+            "id": 4006,
+            "name": "Pizza BBQ Delux",
+            "price": 420,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fbarbekiu-deliuks-min.webp&w=1200&q=75"
+        },
+        {
+            "id": 4007,
+            "name": "Bread with ham and mushrooms",
+            "price": 120,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fkhlebets-vetchyna-hryby.webp&w=1200&q=75"
+        },
+        {
+            "id": 4008,
+            "name": "Bread with bacon and jalapenos",
+            "price": 120,
+            "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fkhlibets-s-bekonom-ta-khalapeno.webp&w=1200&q=75"
         }
     ]}
 ]
