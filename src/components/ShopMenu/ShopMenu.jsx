@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/products/products-selectors';
+import { HiTrash, HiPlus, HiArrowLeft } from 'react-icons/hi';
+import { toast } from 'react-toastify';
 import actions from '../../redux/products/products-actions';
 import { useParams, Outlet, useNavigate, useLocation } from 'react-router-dom';
 import s from './ShopMenu.module.scss';
-import sprite from '../../images/icons.svg'
 import restaurants from '../../data/restaurants.json'
 import Section from '../Section/Section';
 import Container from '../Container/Container';
@@ -12,6 +13,7 @@ import Container from '../Container/Container';
 export default function ShopMenu() {
     const { shopId } = useParams();
     const [shopMenu, setShopMenu] = useState('');
+    const [shopName, setShopName] = useState('');
     const [from, setFrom] = useState(null);
     const [searchBack, setSearchBack] = useState('');
 
@@ -32,9 +34,10 @@ export default function ShopMenu() {
 
     useEffect(() => {
         const selectedRestaurant = restaurants.find(item => item.id === Number(shopId));
-        
+
         if (selectedRestaurant) {
             setShopMenu(selectedRestaurant.menu);
+            setShopName(selectedRestaurant.name)
         }
 
         else {
@@ -57,18 +60,24 @@ export default function ShopMenu() {
 
     function addToCart(itemId, itemName, itemPrice, itemImage) {
         if (products.find(item => item.shopId !== Number(shopId))) {
-            console.log('You have items from another restaurant in a cart');
+            toast.dismiss();
+            toast.error(`You have items from ${products[0].shopName} in a cart`);
             return;
         }
 
         const selectedRestaurant = restaurants.find(item => item.id === Number(shopId));
         let itemsQuantity = 1;
         dispatch(actions.addProduct(selectedRestaurant.id, selectedRestaurant.name, itemName, itemId, itemPrice, itemsQuantity, itemImage));
-        console.log(products);
+        
+        toast.dismiss();
+        toast.success(`You have added ${itemName} to a cart`);
     }
 
-    function deleteItemFromCart(itemId) {
+    function deleteItemFromCart(itemId, itemName) {
         dispatch(actions.deleteProductById(itemId));
+
+        toast.dismiss();
+        toast.error(`You have removed ${itemName} from a cart`);
     }
 
     return <Section>
@@ -76,30 +85,32 @@ export default function ShopMenu() {
         
         {shopMenu &&
             <div className={s.details}>
-                <div className={s.image_wrapper}>
-                    
-                <button onClick={goBackHandle} className={s.go_back}>
-                    {/* <svg className={s.go_back__icon} width="16" height="16" aria-label="logo">
-                        <use href={`${sprite}#arrow-back`}></use>
-                    </svg> */}
-                        Go back
-                    </button>
-                </div>
+                
+                    <div className={s.menu__controls}>
+                        <button onClick={goBackHandle} className={s.go_back}>
+                            <HiArrowLeft/>
+                        </button>
+                        <p className={s.menu__shop_name}>{ shopName }</p>
+                    </div>
 
                 <ul className={s.menu}>
                 {shopMenu.map(({ id, name, price, image }) => (
                     <li key={id} className={s.menu__item}>
-                        <img src={image} alt={name} className={ s.menu__image } />
-                        <h3>{ name }</h3>
-                        <p>{price} UAH</p>
+                        <div className={s.menu__image_wrapper}>
+                            <img src={image} alt={name} className={ s.menu__image } />
+                        </div>
 
-                        
-                        {products.find(item => item.productId === id) 
-                            ? <button onClick={(()=> deleteItemFromCart(id))}>Delete from cart</button>
-                            : <button onClick={()=>addToCart(id, name, price, image)}>Add to cart</button>
-                        }
-                        
-                        
+                        <div className={s.menu__wrapper}>
+                            <div className={s.menu__text_wrapper}>
+                                <h3>{name}</h3>
+                                <p className={s.menu__price}>{price} UAH</p>
+                            </div>
+
+                            {products.find(item => item.productId === id) 
+                                ? <button className={s.menu__button_remove} onClick={(()=> deleteItemFromCart(id, name))}><HiTrash/></button>
+                                : <button className={s.menu__button_add} onClick={()=>addToCart(id, name, price, image)}><HiPlus/></button>
+                            }
+                        </div>
                     </li>
                 ))}
             </ul>

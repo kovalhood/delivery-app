@@ -1,4 +1,4 @@
-import { createAction } from '@reduxjs/toolkit';
+import { createAction, nanoid } from '@reduxjs/toolkit';
 
 const addProduct = createAction('products/Add', (shopId, shopName, name, productId, price, quantity, image) => ({
     payload: {

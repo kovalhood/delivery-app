@@ -3,6 +3,7 @@
     "id": 1,
     "name": "McDonald's",
     "rating": 5,
+    "type": "Fast Food",
     "estimatedTime": "20-30",
     "image": "https://maximum.fm/uploads/media_news/2022/09/63286a4b8a97f238287496.png?w=1200&h=675&il&q=90&output=jpg",
     "menu": [{
@@ -28,6 +29,7 @@
     "id": 2,
     "name": "KFC",
     "rating": 4.8,
+    "type": "Fast Food",
     "estimatedTime": "25-35",
     "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
     "menu": [{
@@ -44,6 +46,58 @@
         },
         {
             "id": 2003,
+            "name": "Coffee",
+            "price": 25,
+            "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
+        }
+    ]},
+    {
+    "id": 3,
+    "name": "SushiMaster",
+    "rating": 4.6,
+    "type": "Asian",
+    "estimatedTime": "45-60",
+    "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
+    "menu": [{
+        "id": 3001,
+        "name": "Chicken Bucket",
+        "price": 60,
+        "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/12/16-piece-bucket-kfc.jpg?quality=82&strip=all"
+        },
+        {
+            "id": 3002,
+            "name": "Fries",
+            "price": 20,
+            "image": "https://brand-uk.assets.kfc.co.uk/2022-11/MOBORDER_LARGE_FRIES_1200x800.jpg?VersionId=vbgU.clRqk5aNYlTKaA.cfXTH1UXQ8yq"
+        },
+        {
+            "id": 3003,
+            "name": "Coffee",
+            "price": 25,
+            "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
+        }
+    ]},
+    {
+    "id": 4,
+    "name": "Dominos Pizza",
+    "rating": 4.3,
+    "type": "Italian",
+    "estimatedTime": "30-40",
+    "image": "https://mi100.info/wp-content/uploads/2023/02/756468281476384.jpg",
+    "menu": [{
+        "id": 4001,
+        "name": "Chicken Bucket",
+        "price": 60,
+        "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2022/12/16-piece-bucket-kfc.jpg?quality=82&strip=all"
+        },
+        {
+            "id": 4002,
+            "name": "Fries",
+            "price": 20,
+            "image": "https://brand-uk.assets.kfc.co.uk/2022-11/MOBORDER_LARGE_FRIES_1200x800.jpg?VersionId=vbgU.clRqk5aNYlTKaA.cfXTH1UXQ8yq"
+        },
+        {
+            "id": 4003,
             "name": "Coffee",
             "price": 25,
             "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
