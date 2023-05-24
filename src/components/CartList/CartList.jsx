@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/products/products-selectors';
+import { HiTrash, HiPlus, HiMinus } from 'react-icons/hi';
 import { toast } from 'react-toastify';
-import { Link, useLocation } from 'react-router-dom';
 import 'react-loading-skeleton/dist/skeleton.css'
 import actions from '../../redux/products/products-actions';
 import OrderBar from './OrderBar/OrderBar';
@@ -29,33 +29,38 @@ const CartList = () => {
         dispatch(actions.deleteProductById(itemId));
     }
 
-    function clearCart() {
-        dispatch(actions.deleteAll());
-    }
-
     function handleIsLoading(data) {
         setIsLoading(data);
     }
 
     if (products.length !== 0 && isLoading === false) {
-        return <>
-                <button onClick={() => clearCart()}>Delete all</button>
+        return <div className={s.cartList__wrapper}>
                 <ul className={s.cart}>
                     {products.map(({ productId, shopName, name, price, image, quantity }) => (
                         <li key={productId} className={s.cart__item}>
-                            <img className={s.cart__image} src={image} alt={name} />
-                            <p>{shopName}</p>
-                            <h3>{ name }</h3>
-                            <p>{price * quantity} UAH</p>
-                            <p>{quantity}</p>
-                            <button onClick={()=>addItem(productId)}>+</button>
-                            <button onClick={() => removeItem(productId)}>-</button>
-                            <button onClick={()=>deleteItem(productId)}>Delete item</button>
+                            <div className={s.cart__image_wrapper}>
+                                <img className={s.cart__image} src={image} alt={name} />
+                            </div>
+                            <div className={s.cart__wrapper}>
+                                <div className={s.cart__text_wrapper}>
+                                    <p className={s.menu__shop_name}>{shopName}</p>
+                                    <h3>{ name }</h3>
+                                    <p className={s.menu__price}>{price * quantity} UAH</p>
+                                </div>
+                                <div className={s.cart__controls_wrapper}>
+                                    <button className={quantity===1 ? s.cart__button_disabled : s.cart__button} onClick={() => removeItem(productId)}><HiMinus/></button>
+                                    <p className={s.cart__quantity}>{quantity}</p>
+                                    <button className={s.cart__button} onClick={()=>addItem(productId)}><HiPlus/></button>
+                                    
+                                </div>
+                            </div>
+
+                            <button className={s.cart__button_delete} onClick={() => deleteItem(productId)}><HiTrash/></button>
                         </li>
                     ))}
                 </ul>
                 <OrderBar loaderMessage={ handleIsLoading } />
-            </>
+            </div>
     }
 
     if (products.length === 0 && isLoading === false) {

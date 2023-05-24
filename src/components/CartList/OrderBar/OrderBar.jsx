@@ -23,10 +23,15 @@ const OrderBar = ({loaderMessage}) => {
         return sum;
     };
 
-    return <>
-        <OrderInputForm total={totalCount(products)} loader={ loaderMessage } />
+    function clearCart() {
+        dispatch(actions.deleteAll());
+    }
+
+    return <div className={s.orderBar__wrapper}>
+            <button onClick={() => clearCart()}>Delete all</button>
+            <OrderInputForm total={totalCount(products)} loader={ loaderMessage } />
             <p>Total: { totalCount(products) } UAH</p>
-        </>
+        </div>
 }
 
 export default OrderBar;
