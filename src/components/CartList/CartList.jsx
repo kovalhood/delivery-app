@@ -10,7 +10,7 @@ import OrderBar from './OrderBar/OrderBar';
 import s from './CartList.module.scss';
 
 const CartList = () => {
-    const [isLoading, setIsLoading] = useState(false);
+    const [isOrdered, setIsOrdered] = useState(false);
     const products = useSelector(getProducts);
     const dispatch = useDispatch();
 
@@ -30,11 +30,11 @@ const CartList = () => {
         dispatch(actions.deleteProductById(itemId));
     }
 
-    function handleIsLoading(data) {
-        setIsLoading(data);
+    function handleIsOrdered(data) {
+        setIsOrdered(data);
     }
 
-    if (products.length !== 0 && isLoading === false) {
+    if (products.length !== 0 && isOrdered === false) {
         return <div className={s.cartList__wrapper}>
                 <ul className={s.cart}>
                     {products.map(({ productId, shopName, name, price, image, quantity }) => (
@@ -60,11 +60,11 @@ const CartList = () => {
                         </li>
                     ))}
                 </ul>
-                <OrderBar loaderMessage={ handleIsLoading } />
+                <OrderBar orderedMessage={ handleIsOrdered } />
             </div>
     }
 
-    if (products.length === 0 && isLoading === false) {
+    if (products.length === 0 && isOrdered === false) {
         return <div className={s.cart__empty_wrapper}>
             <HiShoppingCart className={s.cart__empty_icon}/>
             <p className={s.cart__empty_title}>Your cart is empty</p>
@@ -73,7 +73,7 @@ const CartList = () => {
         </div>
     }
 
-    if (isLoading === true) {
+    if (isOrdered === true) {
         return <div className={s.cart__ordered_wrapper}>
             <HiThumbUp className={s.cart__ordered_icon}/>
             <p className={s.cart__ordered_title}>Your order is accepted</p>

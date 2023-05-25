@@ -1,0 +1,69 @@
+@import "../../../../globalStyles/vars";
+
+.form__submit_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+}
+
+.form__total{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 94px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
+}
+
+.form__total_sum{
+    margin-top: 3px;
+    font-size: 20px;
+    color: $accentColor;
+    font-weight: 700;
+}
+
+.form__wrapper{
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.form__wrapper_1{
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
+}
+
+.form__wrapper_2{
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
+}

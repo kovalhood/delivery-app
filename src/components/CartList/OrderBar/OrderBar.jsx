@@ -8,7 +8,7 @@ import actions from '../../../redux/products/products-actions';
 import OrderInputForm from './OrderInputForm/OrderInputForm';
 import s from './OrderBar.module.scss';
 
-const OrderBar = ({loaderMessage}) => {
+const OrderBar = ({orderedMessage}) => {
     const products = useSelector(getProducts);
     const dispatch = useDispatch();
 
@@ -28,10 +28,13 @@ const OrderBar = ({loaderMessage}) => {
     }
 
     return <div className={s.orderBar__wrapper}>
-            <button onClick={() => clearCart()}>Delete all</button>
-            <OrderInputForm total={totalCount(products)} loader={ loaderMessage } />
-            <p>Total: { totalCount(products) } UAH</p>
+        <div className={s.orderBar__title_wrapper}>
+            <p className={s.orderBar__title}>Contact Details</p>
+            <button className={s.orderBar__button_clear} onClick={() => clearCart()}>Clear cart</button>
         </div>
+        
+        <OrderInputForm total={totalCount(products)} ordered={ orderedMessage } />
+    </div>
 }
 
 export default OrderBar;

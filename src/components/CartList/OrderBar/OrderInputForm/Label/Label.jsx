@@ -3,7 +3,7 @@ import s from './Label.module.scss';
 
 const Label = ({ labelTitle, children}) => {
     return <label className={s.label}>
-        {labelTitle}
+       <span className={s.label__text}>{labelTitle}</span>
         {children}
     </label>
 }
