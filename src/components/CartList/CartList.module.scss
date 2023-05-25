@@ -209,31 +209,36 @@
     }
 }
 
-.cart__empty_wrapper{
+.cart__empty_wrapper,
+.cart__ordered_wrapper{
     padding-top: 20px;
     text-align: center;
 }
 
-.cart__empty_icon{
+.cart__empty_icon,
+.cart__ordered_icon{
     width: 64px;
     height: 64px;
     color: $accentColor;
     margin-bottom: 30px;
 }
 
-.cart__empty_title{
+.cart__empty_title,
+.cart__ordered_title{
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.cart__empty_text{
+.cart__empty_text,
+.cart__ordered_text{
 color: grey;
 margin-bottom: 40px;
 }
 
-.cart__empty_button{
+.cart__empty_button,
+.cart__ordered_button{
     background-color: $accentColor;
     color: $whiteColor;
     font-weight: 500;

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/products/products-selectors';
-import { HiTrash, HiPlus, HiMinus, HiShoppingCart } from 'react-icons/hi';
+import { HiTrash, HiPlus, HiMinus, HiShoppingCart, HiThumbUp } from 'react-icons/hi';
 import { NavLink } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -74,7 +74,12 @@ const CartList = () => {
     }
 
     if (isLoading === true) {
-        return <p>Thank you for the order!</p>
+        return <div className={s.cart__ordered_wrapper}>
+            <HiThumbUp className={s.cart__ordered_icon}/>
+            <p className={s.cart__ordered_title}>Your order is accepted</p>
+            <p className={s.cart__ordered_text}>Our courier is already rushing to you <br /> with your order!</p>
+            <NavLink to='/' className={s.cart__ordered_button} >Back to shops</NavLink>
+        </div>
     }
 }
 
