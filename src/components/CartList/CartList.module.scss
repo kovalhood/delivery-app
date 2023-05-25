@@ -167,6 +167,8 @@
     color: gray;
     border: none;
     border-radius: 50%;
+
+    transition: $mainTransition;
 }
 
 .cart__quantity{
