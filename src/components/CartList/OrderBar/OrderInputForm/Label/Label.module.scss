@@ -16,7 +16,9 @@
     border: none;
     outline: none;
     border-radius: 20px;
+    -webkit-appearance: none;
     box-shadow: $headerShadow;
+    -webkit-box-shadow: $headerShadow;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 

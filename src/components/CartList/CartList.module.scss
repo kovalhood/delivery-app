@@ -167,13 +167,6 @@
     color: gray;
     border: none;
     border-radius: 50%;
-    cursor: pointer;
-
-    transition: $mainTransition;
-
-    &:hover {
-        box-shadow: 0 3px 4px rgb(0 0 0 / 30%);
-    }
 }
 
 .cart__quantity{
