@@ -208,3 +208,42 @@
         box-shadow: 0 3px 4px rgb(0 0 0 / 30%);
     }
 }
+
+.cart__empty_wrapper{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.cart__empty_icon{
+    width: 64px;
+    height: 64px;
+    color: $accentColor;
+    margin-bottom: 30px;
+}
+
+.cart__empty_title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cart__empty_text{
+color: grey;
+margin-bottom: 40px;
+}
+
+.cart__empty_button{
+    background-color: $accentColor;
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: $mainTransition;
+
+    &:hover{
+        box-shadow: $mainShadow;
+    }
+}

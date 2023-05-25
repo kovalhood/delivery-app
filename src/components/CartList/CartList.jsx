@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/products/products-selectors';
-import { HiTrash, HiPlus, HiMinus } from 'react-icons/hi';
+import { HiTrash, HiPlus, HiMinus, HiShoppingCart } from 'react-icons/hi';
+import { NavLink } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-loading-skeleton/dist/skeleton.css'
 import actions from '../../redux/products/products-actions';
@@ -64,7 +65,12 @@ const CartList = () => {
     }
 
     if (products.length === 0 && isLoading === false) {
-        return <p>Choose some products</p>
+        return <div className={s.cart__empty_wrapper}>
+            <HiShoppingCart className={s.cart__empty_icon}/>
+            <p className={s.cart__empty_title}>Your cart is empty</p>
+            <p className={s.cart__empty_text}>You have no items in shopping cart.<br /> Let's go buy something!</p>
+            <NavLink to='/' className={s.cart__empty_button} >Shop Now</NavLink>
+        </div>
     }
 
     if (isLoading === true) {
