@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/products/products-selectors';
 import { HiTrash, HiPlus, HiMinus, HiShoppingCart, HiThumbUp } from 'react-icons/hi';
 import { NavLink } from "react-router-dom";
-import { toast } from 'react-toastify';
 import 'react-loading-skeleton/dist/skeleton.css'
 import actions from '../../redux/products/products-actions';
 import OrderBar from './OrderBar/OrderBar';
@@ -13,8 +12,6 @@ const CartList = () => {
     const [isOrdered, setIsOrdered] = useState(false);
     const products = useSelector(getProducts);
     const dispatch = useDispatch();
-
-    console.log(products);
 
     function addItem(itemId) {
         dispatch(actions.quantityAdd(itemId));

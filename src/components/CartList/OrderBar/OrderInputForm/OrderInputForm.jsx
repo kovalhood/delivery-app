@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../../../redux/products/products-selectors';
 import actions from '../../../../redux/order/order-actions';
 import actionsProducts from '../../../../redux/products/products-actions';
-import { getOrders } from '../../../../redux/order/order-selectors';
 import Label from './Label';
 import InputText from './InputText';
 import InputNumber from './InputNumber/InputNumber';
@@ -11,7 +10,6 @@ import Button from './Button';
 import s from './OrderInputForm.module.scss';
 
 function OrderInputForm({ total, ordered }) {
-    const [order, setOrder] = useState([]);
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
     const [email, setEmail] = useState('');
@@ -20,11 +18,8 @@ function OrderInputForm({ total, ordered }) {
     const products = useSelector(getProducts);
     const dispatch = useDispatch();
 
-
     const handleSubmit = event => {
         event.preventDefault();
-
-        console.log(name, number, email, address, total, products);
 
         let itemTest = {
             user: {
@@ -44,8 +39,6 @@ function OrderInputForm({ total, ordered }) {
     const handleKeyPressNumber = (event) => {        
         ["e", "E", ".", ","].includes(event.key) && event.preventDefault();
     }
-
-        
 
     const handleChange = event => {
         const { name, value } = event.currentTarget;
@@ -107,7 +100,7 @@ function OrderInputForm({ total, ordered }) {
             <p className={s.form__total}>Total: <span className={s.form__total_sum}>{ total } UAH</span></p>
             <Button type={'submit'} title={"Confirm Order"} />
         </div>
-</form>
+    </form>
 };
 
 export default OrderInputForm;

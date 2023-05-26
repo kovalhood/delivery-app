@@ -1,45 +1,57 @@
 [
-  {
-    "id": 1,
-    "name": "McDonald's",
-    "rating": 5,
-    "type": "Fast Food",
-    "estimatedTime": "20-30",
-    "image": "https://maximum.fm/uploads/media_news/2022/09/63286a4b8a97f238287496.png?w=1200&h=675&il&q=90&output=jpg",
-    "menu": [{
+    {
+        "id": 1,
+        "name": "McDonald's",
+        "rating": 5,
+        "type": "Fast Food",
+        "estimatedTime": "20-30",
+        "image": "https://maximum.fm/uploads/media_news/2022/09/63286a4b8a97f238287496.png?w=1200&h=675&il&q=90&output=jpg",
+        "menu": [{
             "id": 1001,
             "name": "Big Mac",
-            "price": 60,
+            "price": 90,
             "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_0005_BigMac_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
             "id": 1002,
             "name": "Big Tasty",
-            "price": 80,
+            "price": 110,
             "image": "https://www.mcdonalds.com.mt/wp-content/uploads/2018/05/BigTasty-Classic.jpg"
         },
         {
             "id": 1003,
+            "name": "Double Cheeseburger",
+            "price": 75,
+            "image": "https://i.insider.com/643d74990a29b4001880dd76?width=1136&format=jpeg"
+        },
+        {
+            "id": 1004,
             "name": "Fries",
             "price": 40,
             "image": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_6053_LargeFries_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
-            "id": 1004,
-            "name": "Chicken Nuggets",
-            "price": 50,
-            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Chicken-McNuggets-6-pieces-new:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
-        },
-        {
             "id": 1005,
-            "name": "Coca-Cola",
-            "price": 25,
-            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Coca-Cola-Medium-2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
+            "name": "Fresh Chicken Roll",
+            "price": 80,
+            "image": "https://www.mcdonalds.sk/uploads/images/articles/ce372fe1f21ec40b1001403eb6ed732e_Veggie%20wrap.jpg"
         },
         {
             "id": 1006,
+            "name": "Chicken Nuggets",
+            "price": 70,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Chicken-McNuggets-6-pieces-new:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
+        },
+        {
+            "id": 1007,
+            "name": "Coca-Cola",
+            "price": 40,
+            "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Coca-Cola-Medium-2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
+        },
+        {
+            "id": 1008,
             "name": "Coffee Late",
-            "price": 30,
+            "price": 45,
             "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-White-Coffee-Reg-v2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
         }
     ]},
@@ -53,39 +65,57 @@
     "menu": [{
             "id": 2001,
             "name": "Chicken Bucket",
-            "price": 100,
-            "image": "https://files.kfcku.com/uploads/media/food-menu/spesial/kfc-web_9pcbucket-_l.png"
+            "price": 320,
+            "image": "https://www.kfc-ukraine.com/admin/files/3742.jpg"
         },
         {
             "id": 2002,
-            "name": "Colonel Burger",
-            "price": 70,
-            "image": "https://files.kfcku.com/uploads/media/food-menu/praktis/large/colonel-burger_900x500.png"
+            "name": "Bucket Duo",
+            "price": 260,
+            "image": "https://www.kfc-ukraine.com/admin/files/4093.png"
         },
         {
             "id": 2003,
-            "name": "Twister",
-            "price": 60,
-            "image": "https://kfcnamibia.com/wp-content/uploads/2021/10/Twister-1024x1024.jpg"
+            "name": "Chicken Legs Bucket",
+            "price": 290,
+            "image": "https://www.kfc-ukraine.com/admin/files/4123.jpg"
         },
         {
             "id": 2004,
-            "name": "Fries",
-            "price": 50,
-            "image": "https://files.kfcku.com/uploads/media/dummy/food/kfc-web_frenchfriesreg_l.png"
+            "name": "Cheeseburger DeLux",
+            "price": 100,
+            "image": "https://www.kfc-ukraine.com/admin/files/4185.png"
         },
         {
             "id": 2005,
-            "name": "Coffee",
-            "price": 35,
-            "image": "https://t4.ftcdn.net/jpg/03/05/07/25/360_F_305072564_dDyIDIOfOrEBx0wddx0TPZH7zg0slv4F.jpg"
+            "name": "Double Chicken",
+            "price": 130,
+            "image": "https://www.kfc-ukraine.com/admin/files/4126.jpg"
+        },
+        {
+            "id": 2006,
+            "name": "Twister",
+            "price": 60,
+            "image": "https://www.kfc-ukraine.com/admin/files/4189.png"
+        },
+        {
+            "id": 2007,
+            "name": "Fries",
+            "price": 50,
+            "image": "https://www.kfc-ukraine.com/admin/files/3831.jpg"
+        },
+        {
+            "id": 2008,
+            "name": "Pepsi",
+            "price": 40,
+            "image": "https://www.kfc-ukraine.com/admin/files/3773.jpg"
         }
     ]},
     {
     "id": 3,
     "name": "SushiMaster",
     "rating": 4.5,
-    "type": "Asian",
+    "type": "Japanese",
     "estimatedTime": "45-60",
     "image": "https://tomato.ua/image/resize/storage/restaurants/5bec4766ddb8b1004d268d19/15422114305bec476672e1f_5bec4731879ee7.99237775.jpeg?w=1200&h=1200",
     "menu": [{
@@ -111,6 +141,12 @@
             "name": "Starter Set",
             "price": 400,
             "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%A1%D0%B5%D1%82%D0%B8/152D5921-9C9F-11ED-8B10-F7FE9622126C-1969%D1%851100_0004_%D0%A1%D0%B5%D1%82-%D0%93%D1%83%D1%80%D0%BC%D0%B0%D0%BD.png?alt=media&token=c6e8840f-e58e-414b-a441-20d17a349ac9&w=800&format=webp&mode=fit&q=60"
+        },
+        {
+            "id": 3005,
+            "name": "Hot Heaven",
+            "price": 500,
+            "image": "https://x100-venus-sm-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%A1%D0%B5%D1%82%D0%B8/3236F591-310A-11ED-ACA4-2DE1140535B7-1969%D1%851100_0000_%D0%A1%D0%B5%D1%82-%D0%A2%D0%B5%D0%BF%D0%BB%D0%B8%D0%B9-%D1%80%D0%B0%D0%B9.png?alt=media&token=c4a8fe90-7d11-4b87-810e-beaee499bfbf&w=991&h=700&format=webp&mode=fit&q=60"
         }
     ]},
     {
@@ -167,6 +203,255 @@
             "name": "Bread with bacon and jalapenos",
             "price": 120,
             "image": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fkhlibets-s-bekonom-ta-khalapeno.webp&w=1200&q=75"
+        }
+    ]},
+    {
+    "id": 5,
+    "name": "Mama Manana",
+    "rating": 4.4,
+    "type": "Georgian",
+    "estimatedTime": "40-50",
+    "image": "https://lunchpoint.com/manager/img/restaurants/146809801712932749_973883279331477_7141460153693285414_n.jpg",
+    "menu": [{
+            "id": 5001,
+            "name": "Khinkali with beaf and pork",
+            "price": 130,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/2-khinkali.jpg"
+        },
+        {
+            "id": 5002,
+            "name": "Khinkali with turkey and rye flour",
+            "price": 180,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/2-khinkali-indeika.png"
+        },
+        {
+            "id": 5003,
+            "name": "Khinkali Vegan",
+            "price": 240,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/2-khinkali-griby.png"
+        },
+        {
+            "id": 5004,
+            "name": "Khinkali Tom Yum",
+            "price": 360,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/0-khinkali-pumpkin.png"
+        },
+        {
+            "id": 5005,
+            "name": "Adjarian khachapuri",
+            "price": 230,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/1-adzhar.png"
+        },
+        {
+            "id": 5006,
+            "name": "Khachapuri Manana",
+            "price": 260,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/1-manana1.png"
+        },
+        {
+            "id": 5007,
+            "name": "Metevze with salted salmon",
+            "price": 300,
+            "image": "https://srv.mastergood.kiev.ua:65010/Image-mobile/1-metevze-salmon.png"
+        }
+    ]},
+    {
+    "id": 6,
+    "name": "Sushi Icons",
+    "rating": 4.5,
+    "type": "Japanese",
+    "estimatedTime": "20-30",
+    "image": "https://kremenchug.ua/uploads/posts/2019-12/1575407002_sushi_icons_1.jpg",
+    "menu": [{
+            "id": 6001,
+            "name": "Roll Philadelphia DOUBLE CHEESE",
+            "price": 410,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_phila_doblle-600x600.jpg"
+        },
+        {
+            "id": 6002,
+            "name": "Philadelphia roll with sesame",
+            "price": 280,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_phila_sesame-600x600.jpg"
+        },
+        {
+            "id": 6003,
+            "name": "Mr. Fish in Kiev",
+            "price": 510,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/mister_fish-600x600.jpg"
+        },
+        {
+            "id": 6004,
+            "name": "Spicy roll with salmon",
+            "price": 250,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_spicy_salmon-600x600.jpg"
+        },
+        {
+            "id": 6005,
+            "name": "Roll green dragon",
+            "price": 520,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_green_dragon-600x600.jpg"
+        },
+        {
+            "id": 6006,
+            "name": "Roll Black Dragon",
+            "price": 410,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_black_dragon-600x600.jpg"
+        },
+        {
+            "id": 6007,
+            "name": "Roll of Higata",
+            "price": 330,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/IMG_7789-600x600.jpg"
+        },
+        {
+            "id": 6008,
+            "name": "Roll Philadelphia mix",
+            "price": 490,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_phila_mix-600x600.jpg"
+        },
+        {
+            "id": 6009,
+            "name": "Mango roll",
+            "price": 420,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_mango-600x600.jpg"
+        },
+        {
+            "id": 6010,
+            "name": "Role of Atlantis",
+            "price": 480,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/roll_antlantida-600x600.jpg"
+        },
+        {
+            "id": 6011,
+            "name": "Roll Asparagus",
+            "price": 550,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/IMG_2856-600x600.jpg"
+        },
+        {
+            "id": 6012,
+            "name": "Spring - roll Vegan",
+            "price": 320,
+            "image": "https://sushiicons.com.ua/image/cache/catalog/New_Roll/IMG_2841-600x600.jpg"
+        }
+    ]},
+    {
+    "id": 7,
+    "name": "Menya Musashi",
+    "rating": 4.9,
+    "type": "Asian",
+    "estimatedTime": "20-30",
+    "image": "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-menya-musashi-main/menu/CELMBbI-xAovjFG-AzRChRG.jpeg",
+    "menu": [{
+            "id": 7001,
+            "name": "Ramen XXL",
+            "price": 330,
+            "image": "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-menya-musashi-main/menu/zAvqhpG-kDndRJq-BDbMTlv.jpeg"
+        },
+        {
+            "id": 7002,
+            "name": "Ramen with veal",
+            "price": 360,
+            "image": "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-menya-musashi-main/menu/lMVJTdV-KthIXuw-GAtjXtY.jpeg"
+        },
+        {
+            "id": 7003,
+            "name": "Ramen with seafood",
+            "price": 260,
+            "image": "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-menya-musashi-main/menu/tbDrHUW-aeMnHWF-lFFVcms.jpeg"
+        },
+        {
+            "id": 7004,
+            "name": "Chashu pork ramen",
+            "price": 270,
+            "image": "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-menya-musashi-main/menu/MMepShy-jhuFQNG-rwlbRPy.jpeg"
+        },
+        {
+            "id": 7005,
+            "name": "Noodles with deep fried chicken",
+            "price": 220,
+            "image": "https://prod-choiceqr-media.s3.eu-central-1.amazonaws.com/prod-eat-menya-musashi-main/menu/VYTiKGJ-GKMJUsC-gesuzPL.jpeg"
+        }
+    ]},
+    {
+    "id": 8,
+    "name": "Puzata Hata",
+    "rating": 4.6,
+    "type": "Ukrainian",
+    "estimatedTime": "30-40",
+    "image": "https://weekend.today/wp-content/uploads/2021/04/32375965_1901133093294568_7848428305324703744_n_31218-770x540.jpg",
+    "menu": [
+        {
+            "id": 8001,
+            "name": "Homemade borscht with meat",
+            "price": 40,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/0af2ca6a-431a-4323-99dd-b379dc181daf-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8002,
+            "name": "Solyanka meat",
+            "price": 45,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/989b6d9c-5f21-4d59-9522-bad299b22467-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8003,
+            "name": "Okroshka",
+            "price": 45,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2021/05/13/974a4aba-11f9-4d68-bd45-12d0bb8c7b38-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8004,
+            "name": "Chicken Kyiv",
+            "price": 60,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/943a6add-d09d-4fa6-b4d9-ae7ad60f52c0-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8005,
+            "name": "Homemade chicken cutlet",
+            "price": 40,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/cc07c55d-c343-43a5-a8c5-9d0d8504d566-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8006,
+            "name": "Grilled chicken steak",
+            "price": 60,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/a815cbf1-34ca-4ea4-aab0-6569e83cfe2a-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8007,
+            "name": "Homemade mashed potatoes",
+            "price": 40,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/de123420-4a58-4c85-95d1-d4801062fc06-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8008,
+            "name": "Buckwheat",
+            "price": 40,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/50ebf0e8-4bc3-43dd-bf0b-74039e7d679f-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8009,
+            "name": "Rice with vegetables",
+            "price": 40,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/bfd1ffe1-024a-4438-a0f9-6d47f746412f-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8010,
+            "name": "Dumplings with potatoes",
+            "price": 50,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/4dab5688-0486-44a2-bd3d-fbe435109878-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8011,
+            "name": "Capital dumplings with chicken",
+            "price": 60,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2022/07/07/d76ce14f-1a62-4335-9d96-8be473838854-thumbnail-400x400-100.jpg"
+        },
+        {
+            "id": 8012,
+            "name": "Cheesecake with raspberries",
+            "price": 70,
+            "image": "https://media.puzatahata.ua/__sized__/images/productosg/2023/04/17/c56d5a25-f020-4529-82eb-02fdf1115651-thumbnail-400x400.png"
         }
     ]}
 ]
