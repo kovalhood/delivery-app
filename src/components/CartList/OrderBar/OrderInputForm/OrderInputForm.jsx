@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../../../redux/products/products-selectors';
 import actions from '../../../../redux/order/order-actions';
 import actionsProducts from '../../../../redux/products/products-actions';
+import { toast } from 'react-toastify';
 import Label from './Label';
 import InputText from './InputText';
 import InputNumber from './InputNumber/InputNumber';
@@ -18,8 +19,21 @@ function OrderInputForm({ total, ordered }) {
     const products = useSelector(getProducts);
     const dispatch = useDispatch();
 
+    const validateEmail = (mail) => {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+            return (true)
+        }
+        toast.dismiss();
+        toast.error('You are writing invalid email address!');
+        return (false)
+    }
+    
     const handleSubmit = event => {
         event.preventDefault();
+
+        if (!validateEmail(email)) {
+            return;
+        }
 
         let itemTest = {
             user: {
